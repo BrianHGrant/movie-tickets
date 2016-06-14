@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Web Development Template</title>
+    <title>Movie Theater</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -21,16 +21,46 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Epicodus Project Template</h1>
-      </header>
-      <h2>Hello World!</h2>
-      <p>
-        This is a nice little index file.  It calls in five different files to support Bootstrap, JQuery, and your custom css and js.
-      </p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Buy your ticket</h1>
+          <form id="order-ticket">
+        <div class="form-group">
+          <label for="">Select Movie</label>
+          <select id="movies">
+            <option value="action">The Firey Explosion</option>
+            <option value="romance">The Longing Embrace</option>
+            <option value="comedy">The Laughable Dolt</option>
+            <option value="history">The Historical Hero</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">Show Time: </label>
+          <form action="">
+            <input type="radio" name="show-time" value="matinee" checked="checked"> 3:00PM
+            <input type="radio" name="show-time" value="regular"> 9:15PM
+        </div>
+        <div class="form-group">
+            <label for="">Age</label>
+            <select id="age">
+              <option value="child">Under 18</option>
+              <option value="adult">18-64</option>
+              <option value="senior">65+</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-info">Submit</button>
+        </div>
+        </div>
+        </form>
+
+        <div id="output">
+          
+        </div>
+
       <footer>
         <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
       </footer>
-    </div> <!-- end container -->
+
   </body>
 </html>
